@@ -4,8 +4,8 @@ Portfolio Deployed using MERN
   
 ## Table of Contents
 * Installation
-* Usage
 * License
+* Heroku Link
 * GitHub Repository
 * Questions
 
