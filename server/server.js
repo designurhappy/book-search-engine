@@ -5,7 +5,7 @@ const db = require('./config/connection');
 const { typeDefs, resolvers } = require('./schemas');
 const { authMiddleware } = require('./utils/auth');
 const routes = require('./routes');
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5000;
 const app = express();
 
 // create a new Apollo server and pass in our schema data
