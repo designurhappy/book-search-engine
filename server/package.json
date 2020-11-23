@@ -6,7 +6,6 @@
   "engines": {
     "node": "12.18.2"
   },
-  
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon server.js"
