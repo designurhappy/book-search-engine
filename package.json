@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
+  
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
@@ -25,4 +26,5 @@
   "devDependencies": {
     "concurrently": "^5.2.0"
   }
+
 }

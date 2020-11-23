@@ -1,13 +1,14 @@
-# book-search-engine
+# Book Search Engine
 
-Portfolio Deployed using MERN
+This is a Google Books API search engine that allows user to save book searches to the back end. It is refactored with GraphQL API built with Apollo Server, MERN stack, React front end, MongoDB database and Node.js/Express.js server and API.
   
-## Table of Contents
-* Installation
-* License
-* Heroku Link
-* GitHub Repository
-* Questions
+
+## Heroku Link
+https://challenge21-book-search-engine.herokuapp.com/ 
+
+
+## GitHub Respository
+https://github.com/designurhappy/book-search-engine
 
  
 ## Installation
@@ -19,11 +20,6 @@ The following commands should be run to install dependencies:
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-## Heroku Link
-https://git.heroku.com/challenge21-book-search-engine.git
-
-## GitHub Respository
-https://github.com/designurhappy/book-search-engine
 
 
 ## Questions
