@@ -1,8 +1,8 @@
 import Auth from '../utils/auth';
 import { searchGoogleBooks } from '../utils/API';
 import { useQuery, useMutation } from '@apollo/react-hooks';
-import { SAVE_BOOK } from '../utils/mutations';
-import { GET_ME_BOOKS } from '../utils/queries';
+import { SAVE_BOOK } from '../utils/mutations.js';
+import { GET_ME_BOOKS } from '../utils/queries.js';
 const SearchBooks = () => {
   // create state for holding returned google api data
   const [searchedBooks, setSearchedBooks] = useState([]);
