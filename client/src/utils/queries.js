@@ -1,4 +1,4 @@
-// import gql from 'graphql-tag';
+import gql from 'graphql-tag';
 
 // export const QUERY_USER = gql`
 //   query GET_ME($username: String) {
@@ -12,9 +12,8 @@
 //   }
 // `;
 
-import gql from 'graphql-tag';
 
-export const GET_ME = gql`
+export const GET_ME_BOOKS = gql`
   {
     me {
       _id
@@ -40,3 +39,12 @@ export const QUERY_USER = gql`
     }
   }
 `;
+// export const GET_ME = gql`
+//   {
+//     me {
+//       _id
+//       username
+//       email
+//     }
+//   }
+// `;

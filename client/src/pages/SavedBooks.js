@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
-
-
+import React from 'react';
+import {
+  Jumbotron,
+  Container,
+  CardColumns,
+  Card,
+  Button,
+} from 'react-bootstrap';
 import Auth from '../utils/auth';
-import { useQuery, useMutuation } from '@apollo/react-hooks';
-import { GET_ME } from '../utils/queries';
+import { useQuery, useMutation } from '@apollo/react-hooks';
+import { GET_ME_BOOKS } from '../utils/queries';
 import { REMOVE_BOOK } from '../utils/mutations';
-
 const SavedBooks = () => {
-  const { loading, data } = useQuery(GET_ME);
+  const { loading, data } = useQuery(GET_ME_BOOKS);
   const userData = data?.me || {};
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
   const handleDeleteBook = async (bookId) => {
@@ -47,7 +50,7 @@ const SavedBooks = () => {
             : 'You have no saved books!'}
         </h2>
         <CardColumns>
-          {userData.savedBooks.map((book) => {
+          {userData.savedBooks?.map((book) => {
             return (
               <Card key={book.bookId} border="dark">
                 {book.image ? (
