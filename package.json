@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
-  
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
@@ -21,10 +20,10 @@
   "dependencies": {
     "apollo-boost": "^0.4.9",
     "apollo-server-express": "^2.19.0",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "mongoose": "^5.10.15"
   },
   "devDependencies": {
     "concurrently": "^5.2.0"
   }
-
 }
